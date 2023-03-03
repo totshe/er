@@ -8,6 +8,7 @@ TOKEN=$(grep -w $MY_IP "/root/er/tokens.txt" | awk '{print $2}')
 cmds=(
     "apt update"
     "sed -i 's/zalupka/'$TOKEN'/g' /root/er/bot.py"
+    "sed -i 's/IPSERVERA/'$MY_IP'/g' /root/er/bot.py"
     "apt install python3-pip -y"
     "apt install python3-venv -y"
     "mkdir test"
