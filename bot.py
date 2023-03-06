@@ -21,8 +21,8 @@ options.add_argument('--disable-dev-shm-usage')
 #5639511186
 
 def send_msg(text):
-    token = "токен ыыыыы"
-    chat_id = "чат id ыыыы"
+    token = "6194572315:AAFnUEffQ-xtnonYPp6aOH8G44_XVQ8XoiI"
+    chat_id = "5992505451"
     url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
     results = requests.get(url_req)
     print(results.json())
