@@ -56,7 +56,7 @@ while True:
         yes_irl = [ 'Website', 'Contact URL', "Youtube URL", "Twitter URL", "Angellist URL","Facebook URL","Whitepaper","Reddit URL","YouTube channel","Linkedin URL", "Official Blog", "Instagram","Source Code","Telegram","Discord URL",'Apple App Store Link', 'Google Scholar Author ID', 'Github URL','Spotify Artist ID','Contact URL','Glassdoor ID','Crunchbase URL','Pitchbook URL','Block Explorer URL','Medium']
         while True :
             time.sleep(1)
-            JWT_TOKEN = ''
+            JWT_TOKEN = 'zalupka'
             DAPP_URL = "https://dapp.golden.xyz/graphql"
             goldapi = GoldenAPI(url=DAPP_URL)
             goldapi.set_jwt_token(jwt_token=JWT_TOKEN)
@@ -315,6 +315,6 @@ while True:
             print('')
         #487711158
     except:
-        #send_msg(f"oshibka проверил {b} троек новые{t}")
+        send_msg(f"oshibka проверил {b} троек новые{t}")
         time.sleep(600)
     
